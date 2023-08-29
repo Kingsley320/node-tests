@@ -3,3 +3,5 @@
 //  console.log(pathObj);
 
 console.log(process.env.PATH.split(path.delimiter));
+
+// learning file system: modules, exports, __dirname, __filename, 
