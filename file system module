@@ -1,0 +1,32 @@
+//File system
+const fs  =require('fs');
+
+// create file
+// fs.writeFile('filesys.txt', 'This is made from a file module in node', (err)=>{
+//     console.log(err ? 'Error creating file' : 'File created');
+//     fs.readFile('filesys.txt','utf8', (err,file)=>{
+//         console.log(err ? 'Error reading file' : `${file}`);
+//         // Alternatively
+//         // if(err){
+//         //     console.log("Error reading file");
+//         // }
+//         // else{
+//         //     console.log(file);
+//         // }
+//     })
+// })
+
+// rename file
+// fs.rename('filesys.txt', 'fs.txt', (err)=>{
+//     console.log(err? 'Error renaming' : 'successfully rename file');
+// })
+
+// Add to file
+// fs.appendFile('fs.txt', 'Appended text', (err)=>{
+//     console.log(err ? 'error appending to file' : 'succefully appended data to file');
+// })
+
+// Delete file
+fs.unlink('fs.txt', (err)=>{
+    console.log(err ? 'err deleting file' : 'deleted successfully');
+})
